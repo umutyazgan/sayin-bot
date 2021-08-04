@@ -1,8 +1,8 @@
 import discord
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
-load_dotenv()
+#load_dotenv()
 
 client = discord.Client()
 
@@ -23,4 +23,4 @@ async def on_message(message):
         else:
             await message.channel.send('Buyrun benim?')
 
-client.run(os.getenv('TOKEN'))
+client.run(os.getenv('DC_TOKEN'))
